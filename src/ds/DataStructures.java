@@ -17,6 +17,14 @@ public class DataStructures {
 		int y = 0;
 		int z = 0;
 
+		z = getAnswer(userInput, s, z);
+		System.out.println("The answer is: " + s.push(z));	
+
+	}
+
+	public static int getAnswer(String userInput, Stack<Integer> s, int z) {
+		int x;
+		int y;
 		for (int i = 0; i < userInput.length(); i++) {
 			char c = userInput.charAt(i);
 
@@ -62,32 +70,8 @@ public class DataStructures {
 			}
 			
 		}
-		System.out.println("The answer is: " + s.push(z));	
-
+		return z;
 	}
 	
 }
 
-// int x = Integer.parseInt();
-
-// System.out.println(s.pop());
-
-// if (x)
-
-// s.push(5); //how you add items
-// s.push(15);
-// s.push(1);
-
-// System.out.println(s.pop()); //last in first outs
-
-// teach a computer how to do math 5*2+3
-
-// userInput for string
-// for:go over one character at a time
-// if: if char is a number then push to the stack
-// Else pop numbers and do the operation and push back to the stack
-// 52*3+
-// 63-1+
-// for loop with if statements
-// convert string to number int x = Integer.parse()
-// submit by 9 am
